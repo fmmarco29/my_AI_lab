@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: my_ai_lib
+Version: 0.1.0
+Summary: A modular AI framework with agents, models, and utilities.
+Author-email: Fernando Martínez Marco <fmmarco29@hotmail.com>
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Dynamic: license-file
+
+# My AI Lab
+
+This is a Python library for building and experimenting with AI agents (ML, RL, custom). It includes example agents, datasets, models, and a flexible architecture for AI research and production.
+
+## Installation
+
+```
+pip install -e .
+```
+
+## Usage
+
+```
+from my_ai_lib.agents import MLAgent
+
+agent = MLAgent()
+data = [1, 2, 3]
+agent.train(data)
+```
+
+## Testing
+
+```
+pytest
+```
