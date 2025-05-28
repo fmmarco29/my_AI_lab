@@ -1,95 +1,99 @@
-¡Claro! Aquí te dejo un README completo, integrado con los logos oficiales (en vez de los badges de shields.io), todos listos para copiar/pegar y adaptarlo como gustes. 👇
+# My AI Lab
 
----
-
-````markdown
-# My AI Lab 🚀
-
-[![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/fmmarco29/my_AI_lab)
-[![LinkedIn](https://cdn-icons-png.flaticon.com/512/174/174857.png)](https://www.linkedin.com/in/fernando-mart%C3%ADnez-marco-a8127328/)
-[![Hugging Face](https://huggingface.co/front/assets/huggingface_logo-noborder.svg)](https://huggingface.co/fmcsihe2929)
-
----
+[![GitHub](https://img.shields.io/badge/GitHub-my_AI_lab-181717?logo=github&logoColor=white)](https://github.com/fmmarco29/my_AI_lab)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fernando%20Mart%C3%ADnez%20Marco-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fernando-mart%C3%ADnez-marco-a8127328/)
+[![Hugging Face](https://img.shields.io/badge/HuggingFace-Spaces-FCC624?logo=huggingface&logoColor=black)](https://huggingface.co/fmcsihe2929)
 
 ## Overview
 
-This repository hosts the **My AI Lab** project, an experimental AI/ML environment featuring modular architecture for agents, data pipelines, and model management. It's designed for rapid prototyping and testing new ideas in a clean, extendable setup.
+This repository hosts the My AI Lab project, an experimental AI/ML environment featuring modular architecture for agents, data pipelines, and model management. It is designed for rapid prototyping and testing new ideas in a clean, extendable setup.
 
-- 🌟 **Modular AI Agents**: Plug-and-play design for ML, RL, and custom agents.
-- 📦 **Data Pipelines**: Includes dataset loaders and preprocessing modules.
-- 🧪 **Extensive Testing**: Integrated testing with `pytest` and coverage tracking.
+## Features
 
----
-
-## Key Links
-
-- **Hugging Face Spaces**: [https://huggingface.co/fmcsihe2929](https://huggingface.co/fmcsihe2929)
-- **LinkedIn Profile**: [Fernando Martínez Marco](https://www.linkedin.com/in/fernando-mart%C3%ADnez-marco-a8127328/)
-- **GitHub Pages Portfolio**: [https://fmmarco29.github.io/AI/](https://fmmarco29.github.io/AI/)
-- **Contact**: [fmmarco29@hotmail.com](mailto:fmmarco29@hotmail.com)
-
----
+- Modular AI agents for supervised learning, reinforcement learning, and custom workflows  
+- Dataset loaders and preprocessing modules  
+- Model factory and wrappers for flexible model creation  
+- Utilities for logging, callbacks, and decorators  
+- Comprehensive testing with pytest and coverage reporting  
+- Continuous integration via GitHub Actions  
 
 ## Installation
 
-1️⃣ Clone the repo:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/fmmarco29/my_AI_lab.git
+   cd my_AI_lab
 
-```bash
-git clone https://github.com/fmmarco29/my_AI_lab.git
-cd my_AI_lab
-````
 
-2️⃣ Create a virtual environment:
+2. Create and activate a virtual environment:
 
-```bash
-python -m venv myenv
-source myenv/bin/activate   # On Linux/Mac
-# or
-myenv\Scripts\activate      # On Windows
+   * On Linux/macOS:
+
+     ```bash
+     python3 -m venv myenv
+     source myenv/bin/activate
+     ```
+   * On Windows:
+
+     ```powershell
+     python -m venv myenv
+     .\myenv\Scripts\activate
+     ```
+3. Install dependencies and development tools:
+
+   ```bash
+   pip install -e .[dev]
+   ```
+
+## Usage
+
+Import core components and start building:
+
+```python
+from my_ai_lib.agents.ml_agent import MLAgent
+from my_ai_lib.data.dataset import load_dataset
+from my_ai_lib.models.model_factory import create_model
+
+agent = MLAgent()
+data = load_dataset("path/to/data.csv")
+model = create_model("random_forest", params={"n_estimators": 100})
 ```
 
-3️⃣ Install dependencies:
+## Testing
 
-```bash
-pip install -e .[dev]
-```
-
----
-
-## Running Tests
-
-Execute all tests with coverage:
+Run tests with coverage:
 
 ```bash
 pytest --cov=my_ai_lib tests/
 ```
 
----
+## Continuous Integration
 
-## Notes
+GitHub Actions workflows in `.github/workflows/ci_cd.yml` ensure automated testing and coverage reporting on each push and pull request.
 
-* Developed on Windows 11, tested with Python 3.12.
-* CI/CD workflows in `.github/workflows/ci_cd.yml` ensure continuous testing and deployment.
-* Open to contributions, feel free to fork and submit PRs!
+## Troubleshooting
 
----
+* Ensure `pytest-cov` is installed (`pip install pytest-cov`).
+* If tests cannot import the package, set `PYTHONPATH`:
+
+  * Linux/macOS: `export PYTHONPATH=$(pwd)`
+  * Windows (PowerShell): `$env:PYTHONPATH = (Get-Location)`
+
+## Contributing
+
+Contributions are welcome. Please open issues or submit pull requests. Follow existing style and testing conventions.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See `LICENSE` for details.
 
----
+## Contact & Links
 
-**Let's connect and create amazing AI solutions!**
+* GitHub: [https://github.com/fmmarco29/my\_AI\_lab](https://github.com/fmmarco29/my_AI_lab)
+* LinkedIn: [https://www.linkedin.com/in/fernando-mart%C3%ADnez-marco-a8127328/](https://www.linkedin.com/in/fernando-mart%C3%ADnez-marco-a8127328/)
+* Hugging Face Spaces: [https://huggingface.co/fmcsihe2929](https://huggingface.co/fmcsihe2929)
+* Portfolio: [https://fmmarco29.github.io/AI/](https://fmmarco29.github.io/AI/)
+* Email: [fmmarco29@hotmail.com](mailto:fmmarco29@hotmail.com)
 
 ```
-
----
-
-💡 **Tips:**
-- Revisa las URLs de los logos (`LinkedIn`, `Hugging Face`, etc.). Podrías usar otras versiones oficiales si prefieres.
-- ¡Asegúrate de que las imágenes estén accesibles (algunos firewalls bloquean íconos)!  
-- ¿Quieres personalizarlo más? Dime si quieres que integre un color o un estilo particular. 
-
-¿Quieres que te lo pase en un archivo `.md`? O si necesitas un **preview de cómo queda** antes de subirlo a GitHub, avísame y te lo muestro.
 ```
