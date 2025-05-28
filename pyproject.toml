@@ -1,39 +1,47 @@
 [build-system]
-requires = ["setuptools>=64", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "my_ai_lib"
 version = "0.1.0"
-description = "A modular AI framework with agents, models, and utilities."
+description = "A professional AI library for testing and experiments"
 authors = [
-    { name="Fernando Martínez Marco", email="fmmarco29@hotmail.com" }
+    { name="Your Name", email="your.email@example.com" },
 ]
 readme = "README.md"
-license = { text = "MIT" }
+requires-python = ">=3.8"
 dependencies = [
     "numpy",
     "pandas",
-    "scikit-learn",
-    "torch",
-    "matplotlib",
-    "seaborn"
+    # agrega otras dependencias de tu proyecto aquí
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
-    "coverage",
-    "flake8",
-    "build",
-    "twine"
+    "pytest-cov",
+    "black",
+    "ruff",
+    "mypy",
+    # otros dev tools
 ]
 
 [tool.setuptools.packages.find]
-where = ["my_ai_lib"]
+where = ["src"]
 
-[tool.setuptools]
-package-dir = {"" = "my_ai_lib"}
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--cov=my_ai_lib --cov-report=term-missing"
+testpaths = ["tests"]
 
-[tool.setuptools.dynamic]
-version = {attr = "my_ai_lib.__version__"}
+[tool.coverage.run]
+branch = true
+source = ["my_ai_lib"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.isort]
+profile = "black"
