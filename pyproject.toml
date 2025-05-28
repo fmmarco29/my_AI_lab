@@ -14,7 +14,7 @@ requires-python = ">=3.8"
 dependencies = [
     "numpy",
     "pandas",
-    # agrega otras dependencias de tu proyecto aquí
+    # Agrega otras dependencias necesarias para tu proyecto
 ]
 
 [project.optional-dependencies]
@@ -24,11 +24,7 @@ dev = [
     "black",
     "ruff",
     "mypy",
-    # otros dev tools
 ]
-
-[tool.setuptools.packages.find]
-where = ["src"]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
