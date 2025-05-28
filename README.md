@@ -7,6 +7,11 @@
 [<img src="https://img.shields.io/badge/LinkedIn-Fernando%20Mart%C3%ADnez%20Marco-0A66C2?logo=linkedin&logoColor=blue" alt="LinkedIn" width="300"/>](https://www.linkedin.com/in/fernando-mart%C3%ADnez-marco-a8127328/)
 [<img src="https://img.shields.io/badge/HuggingFace-Spaces-FCC624?logo=huggingface&logoColor=black" alt="Hugging Face" width="200"/>](https://huggingface.co/fmcsihe2929)
 
+
+
+![ci_cd](https://github.com/fmmarco29/my_AI_lab/actions/workflows/ci_cd.yml/badge.svg)
+
+
 ## Overview
 
 This repository hosts the My AI Lab project, an experimental AI/ML environment featuring modular architecture for agents, data pipelines, and model management. It is designed for rapid prototyping and testing new ideas in a clean, extendable setup.
