@@ -1,8 +1,11 @@
-# My AI Lab
 
-[![GitHub](https://img.shields.io/badge/GitHub-my_AI_lab-181717?logo=github&logoColor=white)](https://github.com/fmmarco29/my_AI_lab)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fernando%20Mart%C3%ADnez%20Marco-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fernando-mart%C3%ADnez-marco-a8127328/)
-[![Hugging Face](https://img.shields.io/badge/HuggingFace-Spaces-FCC624?logo=huggingface&logoColor=black)](https://huggingface.co/fmcsihe2929)
+---
+
+# my\_AI\_lab
+
+[<img src="https://img.shields.io/badge/GitHub-my_AI_lab-181717?logo=github&logoColor=white" alt="GitHub" width="200"/>](https://github.com/fmmarco29)
+[<img src="https://img.shields.io/badge/LinkedIn-Fernando%20Mart%C3%ADnez%20Marco-0A66C2?logo=linkedin&logoColor=blue" alt="LinkedIn" width="300"/>](https://www.linkedin.com/in/fernando-mart%C3%ADnez-marco-a8127328/)
+[<img src="https://img.shields.io/badge/HuggingFace-Spaces-FCC624?logo=huggingface&logoColor=black" alt="Hugging Face" width="200"/>](https://huggingface.co/fmcsihe2929)
 
 ## Overview
 
@@ -10,40 +13,28 @@ This repository hosts the My AI Lab project, an experimental AI/ML environment f
 
 ## Features
 
-- Modular AI agents for supervised learning, reinforcement learning, and custom workflows  
-- Dataset loaders and preprocessing modules  
-- Model factory and wrappers for flexible model creation  
-- Utilities for logging, callbacks, and decorators  
-- Comprehensive testing with pytest and coverage reporting  
-- Continuous integration via GitHub Actions  
+* Modular AI agents for supervised learning, reinforcement learning, and custom workflows
+* Dataset loaders and preprocessing modules
+* Model factory and wrappers for flexible model creation
+* Utilities for logging, callbacks, and decorators
+* Comprehensive testing with pytest and coverage reporting
+* Continuous integration via GitHub Actions
 
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/fmmarco29/my_AI_lab.git
-   cd my_AI_lab
-
-
+   git clone [https://github.com/fmmarco29/my\_AI\_lab.git](https://github.com/fmmarco29/my_AI_lab.git)
+   cd my\_AI\_lab
 2. Create and activate a virtual environment:
 
-   * On Linux/macOS:
-
-     ```bash
+   * **Linux/macOS**:
      python3 -m venv myenv
      source myenv/bin/activate
-     ```
-   * On Windows:
-
-     ```powershell
+   * **Windows (PowerShell)**:
      python -m venv myenv
      .\myenv\Scripts\activate
-     ```
 3. Install dependencies and development tools:
-
-   ```bash
-   pip install -e .[dev]
-   ```
+   pip install -e .\[dev]
 
 ## Usage
 
@@ -76,8 +67,10 @@ GitHub Actions workflows in `.github/workflows/ci_cd.yml` ensure automated testi
 * Ensure `pytest-cov` is installed (`pip install pytest-cov`).
 * If tests cannot import the package, set `PYTHONPATH`:
 
-  * Linux/macOS: `export PYTHONPATH=$(pwd)`
-  * Windows (PowerShell): `$env:PYTHONPATH = (Get-Location)`
+  * **Linux/macOS**:
+    export PYTHONPATH=\$(pwd)
+  * **Windows (PowerShell)**:
+    \$env\:PYTHONPATH = (Get-Location)
 
 ## Contributing
 
@@ -95,5 +88,6 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 * Portfolio: [https://fmmarco29.github.io/AI/](https://fmmarco29.github.io/AI/)
 * Email: [fmmarco29@hotmail.com](mailto:fmmarco29@hotmail.com)
 
-```
-```
+---
+
+
