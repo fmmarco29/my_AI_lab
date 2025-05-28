@@ -1,5 +1,9 @@
 numpy
 pandas
-torch
-scikit-learn
+
+[dev]
 pytest
+pytest-cov
+black
+ruff
+mypy

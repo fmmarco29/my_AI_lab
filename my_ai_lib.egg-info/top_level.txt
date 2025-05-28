@@ -1,5 +1,1 @@
-agents
-config
-data
-models
-utils
+my_ai_lib
