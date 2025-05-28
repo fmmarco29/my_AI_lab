@@ -1,3 +1,3 @@
-def clean_data(data):
-    print("Cleaning data")
+def preprocess_data(data):
+    # Dummy preprocesado
     return data
